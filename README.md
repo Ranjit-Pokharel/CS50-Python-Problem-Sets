@@ -46,7 +46,7 @@ To get started with each week's problem sets, navigate to the respective week fo
 
 ```bash
 # Clone this repository
-git clone https://github.com/yourusername/CS50-Python-Solutions.git
+git clone https://github.com/Ranjit-Pokharel/CS50-Python-Problem-Sets.git
 
 # Navigate into the repository
 cd CS50-Python-Solutions
