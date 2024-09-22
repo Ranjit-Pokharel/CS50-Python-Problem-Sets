@@ -2,7 +2,7 @@
 
 Welcome to my solutions for **CS50's Introduction to Programming with Python**! 🚀
 
-This repository contains my solutions to the problem sets and practice exercises from each week of the course, as well as my final project. The course is designed to teach the basics of programming using Python, with topics ranging from functions and variables to object-oriented programming and file I/O.
+This repository contains my solutions to the problem sets from each week of the course, as well as my final project. The course is designed to teach the basics of programming using Python, with topics ranging from functions and variables to object-oriented programming and file I/O.
 
 Feel free to explore, and hopefully, this helps you in your own learning journey!
 
@@ -50,3 +50,4 @@ git clone https://github.com/Ranjit-Pokharel/CS50-Python-Problem-Sets.git
 
 # Navigate into the repository
 cd CS50-Python-Solutions
+```
