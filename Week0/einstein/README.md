@@ -1,4 +1,4 @@
-Einstein
+## Einstein
 Even if you haven’t studied physics (recently or ever!), you might have heard that 
 , wherein 
  represents energy (measured in Joules), 
