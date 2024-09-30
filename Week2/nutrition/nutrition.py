@@ -1,6 +1,11 @@
 def main():
-    user_fruit = input("Item: ")
-    nutrition_facts(user_fruit)
+    # ask user for fruit name
+    fruit = input("Item: ")
+
+    # display calories of given fruit
+    calories = nutrition_facts(fruit)
+    if calories:
+        print(f"Calories: {calories}")
 
 
 def nutrition_facts(fruit):
@@ -26,8 +31,13 @@ def nutrition_facts(fruit):
         "tangerine": 50,
         "watermelon": 80
     }
-    if fruit.lower() in calories:
-        print(f"Calories: {calories[fruit.lower()]}")
+
+    fruit = fruit.lower().strip()
+
+    if fruit in calories:
+        return calories[fruit]
+    else:
+        return ""
 
 
 

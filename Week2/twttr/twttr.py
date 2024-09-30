@@ -1,15 +1,19 @@
 def main():
-    user_input = input("Input: ")
-    print(del_vowels(user_input))
+    # ask for text from user
+    text = input("Input: ")
+
+    # display text without vowels
+    print(del_vowels(text))
 
 
-def del_vowels(string_to_vowel):
-    vowels = ["a", "e", "i", "o", "u"]
-    no_vowels = ""
-    for character in string_to_vowel:
-        if character.lower() not in vowels:
-            no_vowels += character
-    return no_vowels
+def del_vowels(text):
+    vowels = set("aeiouAEIOU")
+    no_vowel = []
+    # remove vowels if text char is vowels
+    for ch in text:
+        if ch not in vowels:
+            no_vowel.append(ch)
+    return "".join(no_vowel)
 
 
 if __name__ == "__main__":

@@ -1,11 +1,7 @@
 def main():
-    taco_check()
-
-
-def taco_check():
-    total = 0
+    # menu of entrees
     menu = {
-        "Baja Taco": 4.00,
+        "Baja Taco": 4.25,
         "Burrito": 7.50,
         "Bowl": 8.50,
         "Nachos": 11.00,
@@ -15,14 +11,36 @@ def taco_check():
         "Taco": 3.00,
         "Tortilla Salad": 8.00
     }
+
+    # initial total
+    total = 0
+
     while True:
+        # get item that is in menu
+        item = get_item(menu)
+
+        if item == None:
+            continue
+        
+        # adding price of items
+        total += menu[item]
+
+        # display total
+        print(f"${total:.2f}")
+
+
+def get_item(menu):
+        
         try:
             item = input("Item: ").title()
-            if item in menu:
-                total += menu[item]
-                print(f"${total:.2f}")
         except EOFError:
-            break
+            quit()
+
+        if item not in menu:
+            return None
+        
+        return item
+        
 
 if __name__ == "__main__":
     main()

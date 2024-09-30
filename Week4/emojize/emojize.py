@@ -2,12 +2,18 @@ import emoji
 
 
 def main():
-    emojize()
+    # get codes from user
+    codes = get_codes("Input: ")
 
+    # convert the codes to emoji
+    convert_to_emoji(codes)
 
-def emojize():
-    user_input = input("Input: ")
-    print(emoji.emojize(user_input))
+def get_codes(promp):
+    codes = input(promp).strip()
+    return codes
+
+def convert_to_emoji(codes):
+    print("Output:", emoji.emojize(codes, language='alias'))
 
 
 if __name__ == "__main__":

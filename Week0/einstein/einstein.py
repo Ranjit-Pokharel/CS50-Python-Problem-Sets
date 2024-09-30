@@ -3,7 +3,7 @@ def main():
     mass = float(input("m: "))
     
     # print energy
-    print(f"E: {energy_calc(mass)}")
+    print(f"E: {energy_calc(mass):.0f}")
 
 
 def energy_calc(mass):

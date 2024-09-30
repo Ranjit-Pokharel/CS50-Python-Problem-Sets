@@ -1,19 +1,16 @@
 def main():
-    math_interpreter()
+    # get expression
+    expression = input("Expression: ")
+
+    # interprete the expression
+    answer = math_interpreter(expression)
+
+    # display answer
+    print(f"{answer:.1f}")
 
 
-def math_interpreter():
-    x, y, z = input("Expression: ").split()
-    x = float(x)
-    z = float(z)
-    if y == "+":
-        print(f"{x+z:.1f}")
-    elif y == "-":
-        print(f"{x-z:.1f}")
-    if y == "*":
-        print(f"{x*z:.1f}")
-    if y == "/":
-        print(f"{x/z:.1f}")
+def math_interpreter(expression):
+    return eval(expression)
 
 
 if __name__ == "__main__":

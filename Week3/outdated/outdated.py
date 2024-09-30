@@ -1,8 +1,5 @@
 def main():
-    format_date()
-
-
-def format_date():
+    # list of month
     months = [
         "January",
         "February",
@@ -17,30 +14,47 @@ def format_date():
         "November",
         "December"
     ]
-    month = day = year = ""
-
-    while True:
-        date = input("Date: ")
-        if "/" in date:
-            month, day, year = date.split("/")
-        else:
-            month, day, year = date.replace(",", "").split()
-            if month in months:
-                month = months.index(month) + 1
-            else:
-                continue
-        try:
-            day = int(day)
-            year = int(year)
-            month = int(month)
-            if day > 31 or month > 12:
-                continue
-        except ValueError:
-            continue
-        break
     
+    # get valid dates
+    day, month, year = get_date("Date: ", months)
+
+    # display in yyyy-mm-dd format
     print(f"{year}-{month:02}-{day:02}")
 
+
+def get_date(promp, months):
+    while True:
+        dates = input(promp).strip()
+        try:
+            if "/" in dates:
+                month, day, year = dates.split("/")
+                month = int(month)
+            elif "," in dates:
+                month, day, year = dates.split(" ")
+                # given month name is not in the list
+                if month not in months: raise ValueError()
+                day = day.replace(",", "")
+
+                # find the number of given month
+                for i, month_name in enumerate(months):
+                    if month.title() == month_name:
+                        month = i+1
+                        break
+            else:
+                continue
+            
+            day = int(day)
+            
+            if len(year) != 4: raise ValueError()
+            year = int(year)
+            
+            if month > 12: raise ValueError()   
+            if day > 32: raise ValueError()
+        except ValueError:
+            continue
+        
+        return (day, month, year)
+    
 
 if __name__ == "__main__":
     main()
