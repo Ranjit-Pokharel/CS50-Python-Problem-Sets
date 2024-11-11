@@ -1,7 +1,20 @@
 # [Indoor Voice](https://cs50.harvard.edu/python/2022/psets/0/indoor/)
+display inputed text entirely in lowercase
 
-**WRITING IN ALL CAPS IS LIKE YELLING**.
+## Table of Contents
+- [About](#about)
+- [Getting Started](#getting-started)
 
-Best to use your “indoor voice” sometimes, writing entirely in lowercase.
+## About
+convert the user given uppercase (which is like yelling) text to lowercase
 
-In a file called ``indoor.py``, implement a program in Python that prompts the user for input and then outputs that same input in lowercase. Punctuation and whitespace should be outputted unchanged. You’re welcome, but not required, to prompt the user explicitly, as by passing a ``str`` of your own as an argument to ``input``.
+## Getting Started
+### Prerequisites
+- [Python](https://www.python.org/).
+
+### Installation
+   ```
+   git clone https://github.com/Ranjit-Pokharel/CS50-Python-Problem-Sets.git
+   cd CS50-Python-Problem-Sets/psets0/indoor
+   python indoor.py
+   ```
