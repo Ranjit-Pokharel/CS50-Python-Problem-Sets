@@ -8,8 +8,8 @@ E = mc<sup>2</sup>
 - [Python](https://www.python.org/).
 
 ### Installation
-   ```
-   git clone https://github.com/Ranjit-Pokharel/CS50-Python-Problem-Sets.git
-   cd CS50-Python-Problem-Sets/psets0/einstein
-   python einstein.py
-  
+```
+git clone https://github.com/Ranjit-Pokharel/CS50-Python-Problem-Sets.git
+cd CS50-Python-Problem-Sets/psets0/einstein
+python einstein.py
+```
