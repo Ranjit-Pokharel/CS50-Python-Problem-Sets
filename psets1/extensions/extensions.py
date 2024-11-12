@@ -24,10 +24,10 @@ def main() -> None:
 
     Parameters
     ----------
-        - None
+    - None
     Returns
     -------
-        - None
+    - None
     """
     # get name of file
     file_name: str = input("File name: ").lower().strip()
@@ -53,20 +53,16 @@ def extensions(
 
     Parameters
     ----------
-        - file_name (str): name of file that is to be evaluated
-        - extension_types (dict) (default = {
-            "gif": "image/gif",
-            "jpg": "image/jpeg",
-            "jpeg": "image/jpeg",
-            "png": "image/png",
-            "pdf": "application/pdf",
-            "txt": "text/plain",
-            "zip": "application/zip",
-        })
+    - file_name : str
+        The name of the file to evaluate, including its extension.
+
+    - extension_types : dict, optional
+        A dictionary mapping file extensions to types. Defaults to a predefined dictionary
+        including common extensions like "gif", "jpg", "jpeg", "png", "pdf", "txt", and "zip".
 
     Returns
     -------
-        - str: type of file
+    - str: type of file
     """
     if "." in file_name:
         extension = file_name.split(".")[-1]
