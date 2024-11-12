@@ -6,14 +6,15 @@ pset1/deep
     and Everything.
 """
 
+
 def main() -> None:
     """
     ask user for answer and if true response as yes else no
-    
+
     Parameters
     ----------
         - None
-    
+
     Returns
     -------
         - None
@@ -38,11 +39,11 @@ def main() -> None:
 
 
 def is_deep_thought_valid(
-        answer: str, answers:list = ["42", "forty two", "forty-two"]
+    answer: str, answers: list = ["42", "forty two", "forty-two"]
 ) -> bool:
     """
     check if the given answer to the question is true or not
-    
+
     Parameters
     ----------
         - answer (str): the provided answer to be check

@@ -16,16 +16,16 @@ def main():
 
 def convert(time):
     hrs, min = time.split(":")
-    
+
     if "a.m" in min:
-        min , _ = min.split(" ")
-    
+        min, _ = min.split(" ")
+
     if "p.m" in min:
         min, _ = min.split(" ")
         hrs = str(12 + float(hrs))
-    
+
     min = float(min) / 60
-    return(float(hrs) + min)
+    return float(hrs) + min
 
 
 if __name__ == "__main__":

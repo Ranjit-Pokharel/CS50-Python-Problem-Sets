@@ -8,11 +8,11 @@ pset0/tip
 def main() -> None:
     """
     take dollars amount and tip percent and provide how much tip
-    
+
     Parameters
     ----------
         - (None)
-        
+
     Returns
     -------
         - (None)
@@ -26,11 +26,11 @@ def main() -> None:
 def dollars_to_float(d: str) -> float:
     """
     convert the string dollars amount to float
-    
+
     Parameters
     ----------
         - d (str): string dollor amount ($amount)
-    
+
     Returns
     -------
         - (float): converted float
@@ -44,11 +44,11 @@ def dollars_to_float(d: str) -> float:
 def percent_to_float(p: str) -> float:
     """
     convert string percent to float
-    
+
     Parameters
     ----------
         - p (str): string that has percentage e.g 15%
-        
+
     Returns
     -------
         - (float): converted to float

@@ -14,32 +14,32 @@ Use
 def main() -> None:
     """
     ask user for the mass and calculate the joules
-    
+
     Parameters
     ----------
         None
-    
+
     Returns
     -------
         None
     """
     # ask user for mass
     mass: int = int(input("m: "))
-    
+
     energy = equivalent(mass)
     # print energy
     print(f"E: {energy}")
 
 
-def equivalent(mass: int, c: int= 300000000) -> int:
+def equivalent(mass: int, c: int = 300000000) -> int:
     """
     using E = mc^2 convert mass to energy
-    
+
     Parameters
     ----------
         - mass (int): mass in kg to be converted to energy
         - c (int) (default = 300000000): predefined speed default 300000000
-    
+
     Returns
     -------
         result (int): result of E = mc^2

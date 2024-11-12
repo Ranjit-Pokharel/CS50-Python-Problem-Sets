@@ -9,7 +9,7 @@ def main():
         "Super Burrito": 8.50,
         "Super Quesadilla": 9.50,
         "Taco": 3.00,
-        "Tortilla Salad": 8.00
+        "Tortilla Salad": 8.00,
     }
 
     # initial total
@@ -21,7 +21,7 @@ def main():
 
         if item == None:
             continue
-        
+
         # adding price of items
         total += menu[item]
 
@@ -30,17 +30,17 @@ def main():
 
 
 def get_item(menu):
-        
-        try:
-            item = input("Item: ").title()
-        except EOFError:
-            quit()
 
-        if item not in menu:
-            return None
-        
-        return item
-        
+    try:
+        item = input("Item: ").title()
+    except EOFError:
+        quit()
+
+    if item not in menu:
+        return None
+
+    return item
+
 
 if __name__ == "__main__":
     main()

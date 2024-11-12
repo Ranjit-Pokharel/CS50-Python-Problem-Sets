@@ -8,17 +8,21 @@ def main():
 
     guess_number(number)
 
+
 def get_level(promp):
     while True:
         try:
             level = int(input(promp))
-            if level < 1: raise ValueError
+            if level < 1:
+                raise ValueError
             return level
         except ValueError:
             continue
 
+
 def get_number(level):
     return random.randint(1, level)
+
 
 def guess_number(number):
     while True:

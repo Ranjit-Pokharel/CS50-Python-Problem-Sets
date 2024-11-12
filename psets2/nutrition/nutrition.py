@@ -29,7 +29,7 @@ def nutrition_facts(fruit):
         "strawberries": 50,
         "sweet cherries": 100,
         "tangerine": 50,
-        "watermelon": 80
+        "watermelon": 80,
     }
 
     fruit = fruit.lower().strip()
@@ -38,7 +38,6 @@ def nutrition_facts(fruit):
         return calories[fruit]
     else:
         return ""
-
 
 
 if __name__ == "__main__":

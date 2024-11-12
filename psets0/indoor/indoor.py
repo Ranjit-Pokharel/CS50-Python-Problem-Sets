@@ -13,7 +13,7 @@ def main() -> None:
     Parameters
     -----------
         None
-    
+
     Returns
     --------
         None
@@ -28,11 +28,11 @@ def main() -> None:
 def indoor_voice(text: str) -> str:
     """
     convert the text all letters to lowercase
-    
+
     Parameters
     ----------
         text (str): the text that is to be converted to lowercase
-    
+
     Returms
     -------
         str: all lowercase text

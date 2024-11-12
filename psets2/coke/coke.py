@@ -1,18 +1,18 @@
 def main():
     # amount due
     amount_due = 50
-    
+
     while True:
         # display amount due
         print(f"Amount Due: {amount_due}")
 
         # ask user for coin
         coin = int(input("Insert Coin: "))
-        
+
         # check if coin is valid
         if not valid_coin(coin):
             continue
-        
+
         # calculate amount due and change own
         if amount_due <= coin:
             change_own = change_calc(coin, amount_due)
@@ -29,8 +29,9 @@ def valid_coin(coin):
     return False
 
 
-def change_calc(coin, amount_due):    
+def change_calc(coin, amount_due):
     return abs(amount_due - coin)
+
 
 if __name__ == "__main__":
     main()

@@ -13,11 +13,11 @@ Currently, it supports
 def main() -> None:
     """
     ask user for the text with emoticon and display with emoji
-    
+
     Parameters
     ----------
         None
-    
+
     Returns
     -------
         None
@@ -32,11 +32,11 @@ def main() -> None:
 def convert(text: str) -> str:
     """
     convert emoticon to emoji
-    
+
     Parameters
     ----------
         text (str): text contaning emoticon
-        
+
     Returns
     -------
         (str): text with emoji

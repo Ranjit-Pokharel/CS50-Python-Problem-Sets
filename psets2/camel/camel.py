@@ -9,13 +9,13 @@ def main():
 
 def to_snake(camel_string):
     snake_string = ""
-    
+
     for char in camel_string:
         if char.isupper():
-            snake_string += ("_" + char.lower())
+            snake_string += "_" + char.lower()
         else:
             snake_string += char
-    
+
     return snake_string
 
 

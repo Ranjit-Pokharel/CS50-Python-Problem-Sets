@@ -38,7 +38,6 @@ def overlay_images(input_image, output_image):
                 base_image.paste(shirt, shirt)
                 base_image.save(output_image)
 
-
     except FileNotFoundError:
         sys.exit("Input does not exist")
     except OSError:

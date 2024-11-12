@@ -14,4 +14,3 @@ def test_entire_phrase():
     assert value("Hello, world") == 0
     assert value("Greetings, world") == 100
     assert value("Hi, world") == 20
-

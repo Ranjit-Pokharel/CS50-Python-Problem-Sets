@@ -44,13 +44,13 @@ def calc_result(level):
                     first_try = False
                 error -= 1
                 if error == 0:
-                        print(z)
-                        break
+                    print(z)
+                    break
                 print("EEE")
                 continue
         if answer != z:
             if first_try:
-                    score -= 1
+                score -= 1
             while answer != z:
                 try:
                     error -= 1

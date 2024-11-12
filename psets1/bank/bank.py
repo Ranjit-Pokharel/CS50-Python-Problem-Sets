@@ -14,11 +14,11 @@ from typing import Literal
 def main() -> None:
     """
     bank greet the user
-    
+
     Parameters
     ----------
         - None
-        
+
     Returns
     -------
         - None
@@ -32,12 +32,12 @@ def main() -> None:
 
 def greeting(greet: str) -> Literal[0, 20, 100]:
     """
-    determine the greeting amount 
-    
+    determine the greeting amount
+
     Parameters
     ----------
         - greet (str): greet that is evaluated
-        
+
     Returns
     -------
         - Literal[0, 20, 100]

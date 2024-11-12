@@ -17,7 +17,7 @@ def main() -> None:
     -------
         None
     """
-    # get quick speaking words from user 
+    # get quick speaking words from user
     speaking_quickly: str = input()
 
     # slow down speaking and display
@@ -27,11 +27,11 @@ def main() -> None:
 def slow_down(text: str) -> str:
     """
     replace space in with (...)
-    
+
     Parameters
     ----------
         text (str): text which has space
-        
+
     Returns
     -------
         str: text whose space is converted to (...)

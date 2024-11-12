@@ -8,12 +8,14 @@ def main():
     # convert the codes to emoji
     convert_to_emoji(codes)
 
+
 def get_codes(promp):
     codes = input(promp).strip()
     return codes
 
+
 def convert_to_emoji(codes):
-    print("Output:", emoji.emojize(codes, language='alias'))
+    print("Output:", emoji.emojize(codes, language="alias"))
 
 
 if __name__ == "__main__":

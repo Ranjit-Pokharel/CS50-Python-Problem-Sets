@@ -27,8 +27,14 @@ def create_new_csv(csv_input, csv_output):
                 writer = csv.DictWriter(new_file, fieldnames=fieldnames)
                 writer.writeheader()
                 for row in reader:
-                    name = row["name"].replace("\"", "").split(",")
-                    writer.writerow({"first": name[1].strip(), "last": name[0].strip(), "house": row["house"].strip()})
+                    name = row["name"].replace('"', "").split(",")
+                    writer.writerow(
+                        {
+                            "first": name[1].strip(),
+                            "last": name[0].strip(),
+                            "house": row["house"].strip(),
+                        }
+                    )
     except FileNotFoundError:
         sys.exit(f"Could not read {argv[1]}")
 

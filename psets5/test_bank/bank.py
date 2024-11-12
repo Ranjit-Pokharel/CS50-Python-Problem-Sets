@@ -8,7 +8,7 @@ def main():
 
 def value(user_greeting):
     user_greeting = user_greeting.translate(str.maketrans("", "", string.punctuation))
-    greeting = user_greeting.lower().replace("","").split()
+    greeting = user_greeting.lower().replace("", "").split()
     print(greeting)
     penalty = 1
     if greeting[0] == "hello":

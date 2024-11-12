@@ -2,11 +2,10 @@ def main():
     while True:
         try:
             fraction = input("Fraction: ")
-            print (gauge(convert(fraction)))
+            print(gauge(convert(fraction)))
             break
         except (ValueError, ZeroDivisionError):
             continue
-
 
 
 def gauge(percentage):
@@ -17,7 +16,7 @@ def gauge(percentage):
         elif 1 < percentage < 99:
             level = f"{round(percentage)}%"
         elif 99 <= percentage <= 100:
-            level = ("F")
+            level = "F"
         else:
             raise ValueError
         break

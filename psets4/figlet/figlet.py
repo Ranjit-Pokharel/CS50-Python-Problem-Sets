@@ -3,18 +3,19 @@ from pyfiglet import Figlet
 
 figlet = Figlet()
 
+
 def main():
     # geting argument excluding the script
     argv = sys.argv[1:]
-    
+
     # checking program.py [argument] optional valid or not
     error_check(argv)
 
     # seting the fonts
     if len(argv) == 0:
-        figlet.setFont(font = random.choice(figlet.getFonts()))
+        figlet.setFont(font=random.choice(figlet.getFonts()))
     else:
-        figlet.setFont(font = argv[1])
+        figlet.setFont(font=argv[1])
 
     # asking user for text
     message = input("Input: ")
@@ -34,7 +35,6 @@ def error_check(argv):
             sys.exit("Invalid usage")
         if argv[1] not in figlet.getFonts():
             sys.exit("Invalid usage")
-        
 
 
 if __name__ == "__main__":

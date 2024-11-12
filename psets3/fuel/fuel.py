@@ -8,7 +8,7 @@ def main():
 
 def fuel_lvl(x, y):
     fuel = (x / y) * 100
-    
+
     if fuel <= 1:
         return "E"
 
@@ -17,17 +17,16 @@ def fuel_lvl(x, y):
 
     if 99 <= fuel <= 100:
         return "F"
-    
 
 
 def get_fule_fraction():
     while True:
 
         fractions = input("Fraction: ")
-        
+
         try:
-            fraction_x , fraction_y = fractions.split("/")
-            fraction_x, fraction_y= int(fraction_x), int(fraction_y)
+            fraction_x, fraction_y = fractions.split("/")
+            fraction_x, fraction_y = int(fraction_x), int(fraction_y)
         except ValueError:
             continue
 
@@ -38,9 +37,9 @@ def get_fule_fraction():
 
         if fraction_x > fraction_y:
             continue
-        
+
         return fraction_x, fraction_y
-    
+
 
 if __name__ == "__main__":
     main()

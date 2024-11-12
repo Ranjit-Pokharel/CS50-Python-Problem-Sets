@@ -13,8 +13,8 @@ def main():
         except EOFError:
             # if ctrl + d then break
             break
-    
-    # sing adieu song with names 
+
+    # sing adieu song with names
     sing_adieu(names)
 
 
