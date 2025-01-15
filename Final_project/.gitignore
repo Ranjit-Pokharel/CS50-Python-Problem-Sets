@@ -1,0 +1,6 @@
+*
+!.gitignore
+!project.py
+!README.md
+!requirements.txt
+!test_project.py

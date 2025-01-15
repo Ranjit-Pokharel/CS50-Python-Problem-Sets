@@ -1,0 +1,4 @@
+pytest
+ollama
+prompt_toolkit
+emoji
