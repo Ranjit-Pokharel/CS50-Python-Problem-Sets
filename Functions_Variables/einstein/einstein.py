@@ -1,7 +1,7 @@
 """
 pset0/einstein
 --------------
-    program that prompts the user for mass as an integer (in kilograms) 
+    program that prompts the user for mass as an integer (in kilograms)
     and then outputs the equivalent number of Joules as an integer
 
 Use

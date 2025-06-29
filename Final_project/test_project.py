@@ -94,15 +94,17 @@ def test_clear_screen(monkeypatch):
 
 @patch("subprocess.run")  # Mocking subprocess.run
 def test_requirement_check(mock_run):
-    mock_run.return_value = MagicMock(returncode=0, stdout=b"/usr/bin/python3", stderr=b"")
-    
+    mock_run.return_value = MagicMock(
+        returncode=0, stdout=b"/usr/bin/python3", stderr=b""
+    )
+
     try:
         requirement_check("some_model")
     except SystemExit as e:
         pytest.fail(f"requirement_check failed: {e}")
 
     mock_run.return_value = MagicMock(returncode=1, stdout=b"", stderr=b"")
-    
+
     with pytest.raises(SystemExit):
         requirement_check("some_model")
 
@@ -110,8 +112,10 @@ def test_requirement_check(mock_run):
     mock_run.assert_any_call(["which", "ollama"], capture_output=True)
     mock_run.assert_any_call(["ollama", "show", "some_model"], capture_output=True)
 
+
 def test_take_user_input(monkeypatch):
-    monkeypatch.setattr("project.PromptSession.prompt", MagicMock(return_value="test input"))
+    monkeypatch.setattr(
+        "project.PromptSession.prompt", MagicMock(return_value="test input")
+    )
     result = take_user_input("Enter something:")
     assert result == "test input", "User input was not captured correctly"
-

@@ -1,7 +1,7 @@
 """
 pset1/deep
 ----------
-    ask the user for the answer 
+    ask the user for the answer
     to the Great Question of life, the universe
     and Everything.
 """

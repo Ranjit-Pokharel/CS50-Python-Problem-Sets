@@ -1,11 +1,11 @@
 """
 psets1/interpreter
 ------------------
-    program that prompts the user for an arithmetic expression 
-    and then calculates and outputs the result as a floating-point value 
+    program that prompts the user for an arithmetic expression
+    and then calculates and outputs the result as a floating-point value
 Formatted
 ---------
-    x y z 
+    x y z
     with one space between x and y and one space between y and z
     - x is an integer
     - y is +, -, *, or /

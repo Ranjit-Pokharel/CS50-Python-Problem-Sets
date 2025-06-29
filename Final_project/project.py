@@ -3,8 +3,8 @@ NAME:
     ConvAI
 
 DESCRIPTION:
-    This project implements a Python-based AI chatbot that interacts with a user using the Ollama model. 
-    The chatbot can engage in conversation, save the conversation history, 
+    This project implements a Python-based AI chatbot that interacts with a user using the Ollama model.
+    The chatbot can engage in conversation, save the conversation history,
     and offer system-level instructions.
 
 FEATURES:
@@ -246,7 +246,7 @@ def take_user_input(prompt: str) -> str:
     user_input: str = ""
     session = PromptSession()
     bindings = KeyBindings()
-    
+
     # realtime emoji conversion as user type
     @bindings.add("<any>")
     def update_input_buffer(event):
